@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NightEcho Works</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <header class="navbar">
+        <div class="brand">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="NightEcho Works Logo" class="brand-logo">
+            <div class="brand-text">
+                <h1>NightEcho Works</h1>
+                <p>Built After Midnight</p>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+            <a href="/services" class="{% if active_page == 'services' %}active{% endif %}">Services</a>
+            <a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a>
+            <a href="/contact" class="nav-btn">Contact</a>
+        </nav>
+    </header>
+
+    <div class="back-btn-container">
+        <a href="/" class="back-btn">← Back to Home</a>
+    </div>
+
+    <section class="about-page">
+        <div class="about-hero">
+            <div class="about-badge">Who We Are</div>
+            <h2>We Build Digital Solutions With Creativity, Precision, and Purpose</h2>
+            <p>
+                Night Echo Works is a modern creative tech startup focused on turning ideas
+                into premium digital products. We combine design, development, and smart
+                technology to create solutions that look powerful and work beautifully.
+            </p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Our Vision</h3>
+                <p>
+                    To become a trusted digital partner for startups, businesses, and creators
+                    by building premium websites, smart systems, and meaningful digital experiences.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>
+                    We aim to transform ideas into real products through modern design,
+                    quality development, and practical technology that supports growth.
+                </p>
+            </div>
+        </div>
+
+        <div class="story-section">
+            <div class="story-left">
+                <h3>The Story Behind Night Echo Works</h3>
+                <p>
+                    Night Echo Works was born from the idea that some of the best creations
+                    come from deep focus, quiet thinking, and bold execution. We believe great
+                    digital products are not just built with code — they are shaped with vision,
+                    creativity, and intention.
+                </p>
+                <p>
+                    From company websites to custom software and AI-powered tools, our work
+                    reflects a balance of strong visual identity and practical functionality.
+                    We build not just to launch, but to leave a lasting impression.
+                </p>
+            </div>
+
+            <div class="story-right">
+                <div class="about-highlight-card">
+                    <h4>What Makes Us Different</h4>
+                    <ul>
+                        <li>Premium startup-style UI and design approach</li>
+                        <li>Business-focused websites and software solutions</li>
+                        <li>Creative thinking combined with technical execution</li>
+                        <li>Modern development with strong brand presence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="values-section">
+            <h3>Our Core Values</h3>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">✨</div>
+                    <h4>Quality</h4>
+                    <p>We care about clean execution, polished design, and dependable results.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h4>Innovation</h4>
+                    <p>We use modern ideas and smart technology to build impactful solutions.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h4>Trust</h4>
+                    <p>We believe in honest work, clarity, and building strong client relationships.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h4>Purpose</h4>
+                    <p>Every project we build is designed to solve a real need and create value.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-cta-box">
+            <h3>Let’s Create Something Powerful Together</h3>
+            <p>
+                Whether you need a premium website, custom software, or a smart digital solution,
+                Night Echo Works is ready to build with you.
+            </p>
+            <a href="/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-glow footer-glow-1"></div>
+        <div class="footer-glow footer-glow-2"></div>
+
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Night Echo Works</h2>
+                <p>
+                    We build modern digital experiences for startups, businesses, and ambitious brands.
+                    Premium design, smart development, and professional execution.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="/">→ Home</a>
+                <a href="/services">→ Services</a>
+                <a href="/about">→ About</a>
+                <a href="/contact">→ Contact</a>
+            </div>
+
+            <div class="footer-services">
+                <h3>Capabilities</h3>
+                <p>🌐 Web Development</p>
+                <p>🚀 Startup Branding</p>
+                <p>🎨 UI/UX Design</p>
+                <p>⚙️ Digital Solutions</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>📧 hello@nightechoworks.com</p>
+                <p>📞 +91 6381353131</p>
+                <p>📍 India</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Night Echo Works. All rights reserved.</p>
+        </div>
+    </footer>
+<div class="section-divider"></div>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightEcho Works</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- Glow Background -->
+<div class="bg-glow glow-1"></div>
+<div class="bg-glow glow-2"></div>
+<div class="bg-glow glow-3"></div>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="brand">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="brand-logo">
+        <div class="brand-text">
+            <h1>NightEcho Works</h1>
+            <p>Built After Midnight</p>
+        </div>
+    </div>
+
+    <nav class="nav-links">
+        <a href="/" class="{% if active_page == 'home' %}active{% endif %}">Home</a>
+        <a href="/services" class="{% if active_page == 'services' %}active{% endif %}">Services</a>
+        <a href="/about" class="{% if active_page == 'about' %}active{% endif %}">About</a>
+        <a href="/contact" class="nav-btn">Contact</a>
+        <a href="/contact" class="nav-btn">Start Project</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-left">
+        <p class="hero-tagline">
+            We build premium websites and smart digital systems for modern businesses.
+        </p>
+
+        <div class="hero-badge">
+            Creative Tech Studio • Websites • Software • AI
+        </div>
+
+        <h2>
+            We Build
+            <span>Premium Digital Experiences</span>
+            That Feel Powerful & Modern
+        </h2>
+
+        <p class="hero-description">
+            Night Echo Works creates modern websites, smart software systems,
+            and intelligent digital solutions that help businesses grow with
+            confidence and strong brand presence.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="/contact" class="btn btn-primary">Start Your Project</a>
+            <a href="/services" class="btn btn-secondary">Explore Services</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-box">
+                <h3>Premium</h3>
+                <p>Clean design with startup-level branding.</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Fast</h3>
+                <p>Optimized for performance and speed.</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Smart</h3>
+                <p>Modern web, software, and AI solutions.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+        <div class="hero-card">
+
+            <div class="hero-card-top">
+                <span class="mini-tag">Premium Studio</span>
+                <span class="mini-tag active">Night Echo Works</span>
+            </div>
+
+            <div class="showcase-logo-box">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" class="showcase-logo">
+            </div>
+
+            <h3>Crafting bold ideas into digital reality</h3>
+
+            <p>
+                We design and develop business-ready digital solutions
+                with strong identity, clean execution, and modern UI.
+            </p>
+
+            <div class="feature-list">
+                <div class="feature-item">Company Websites</div>
+                <div class="feature-item">Business Software</div>
+                <div class="feature-item">AI Chatbots</div>
+                <div class="feature-item">Modern UI Systems</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="services-header">
+        <div class="services-badge">Our Services</div>
+        <h2>Solutions Designed for Modern Brands</h2>
+        <p>
+            We create premium digital solutions that combine design, technology,
+            and performance to help businesses grow with confidence.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-premium-card">
+            <div class="service-icon-box">🌐</div>
+            <h3>Website Development</h3>
+            <p>
+                Modern, responsive, and visually premium websites that build trust
+                and strengthen your business identity online.
+            </p>
+            <div class="service-tags">
+                <span>Responsive</span>
+                <span>Premium UI</span>
+                <span>Fast Loading</span>
+            </div>
+        </div>
+
+        <div class="service-premium-card">
+            <div class="service-icon-box">💻</div>
+            <h3>Custom Software</h3>
+            <p>
+                Smart systems, dashboards, admin panels, and workflow tools
+                tailored to your business requirements and operations.
+            </p>
+            <div class="service-tags">
+                <span>Dashboards</span>
+                <span>Admin Panels</span>
+                <span>Business Tools</span>
+            </div>
+        </div>
+
+        <div class="service-premium-card">
+            <div class="service-icon-box">🤖</div>
+            <h3>AI Solutions</h3>
+            <p>
+                Intelligent chatbot systems and automation-driven solutions
+                that improve support, engagement, and digital efficiency.
+            </p>
+            <div class="service-tags">
+                <span>Chatbots</span>
+                <span>Automation</span>
+                <span>Smart Systems</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Premium Capabilities Section -->
+<section class="capabilities-section">
+    <div class="capabilities-header">
+        <div class="capabilities-badge">Our Expertise</div>
+        <h2>What We Build With Precision and Purpose</h2>
+        <p>
+            We craft premium digital solutions that combine strong design,
+            practical functionality, and modern technology for businesses,
+            startups, and growing brands.
+        </p>
+    </div>
+
+    <div class="capabilities-grid">
+
+        <div class="capability-card">
+            <div class="capability-top-line"></div>
+            <div class="capability-icon">🌐</div>
+            <h3>Business Websites</h3>
+            <p>
+                Elegant and modern websites designed to strengthen your brand,
+                impress clients, and create a professional digital presence.
+            </p>
+
+            <div class="capability-points">
+                <span>Premium UI Design</span>
+                <span>Responsive Layout</span>
+                <span>Fast Performance</span>
+            </div>
+        </div>
+
+        <div class="capability-card">
+            <div class="capability-top-line"></div>
+            <div class="capability-icon">⚙️</div>
+            <h3>Custom Software Systems</h3>
+            <p>
+                Smart software solutions built to simplify business operations,
+                improve workflows, and support long-term digital growth.
+            </p>
+
+            <div class="capability-points">
+                <span>Admin Panels</span>
+                <span>Dashboards</span>
+                <span>Management Tools</span>
+            </div>
+        </div>
+
+        <div class="capability-card">
+            <div class="capability-top-line"></div>
+            <div class="capability-icon">🤖</div>
+            <h3>AI-Powered Solutions</h3>
+            <p>
+                Intelligent chatbot systems and automation-driven solutions
+                that improve interaction, support, and efficiency.
+            </p>
+
+            <div class="capability-points">
+                <span>Chatbots</span>
+                <span>Automation</span>
+                <span>Smart Workflows</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="services-cta-box">
+    <div class="cta-mini-badge">Let’s Build Something Exceptional</div>
+    <h3>Have an idea in mind?</h3>
+    <p>
+        Let’s transform your vision into a premium digital experience
+        that feels modern, powerful, and ready for real growth.
+    </p>
+    <a href="/contact" class="btn btn-primary">Start Your Project</a>
+</section>
+<footer class="site-footer">
+    <div class="footer-glow footer-glow-1"></div>
+    <div class="footer-glow footer-glow-2"></div>
+
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>Night Echo Works</h2>
+            <p>
+                We build modern digital experiences for startups, businesses, and ambitious brands.
+                Premium design, smart development, and professional execution.
+            </p>
+        </div>
+
+        <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="/">→ Home</a>
+                <a href="/services">→ Services</a>
+                <a href="/about">→ About</a>
+                <a href="/contact">→ Contact</a>
+            </div>
+
+            <div class="footer-services">
+                <h3>Capabilities</h3>
+                <p>🌐 Web Development</p>
+                <p>🚀 Startup Branding</p>
+                <p>🎨 UI/UX Design</p>
+                <p>⚙️ Digital Solutions</p>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>📧 hello@nightechoworks.com</p>
+                <p>📞 +91 6381353131</p>
+                <p>📍 India</p>
+            </div>
+        </div>
+    <div class="footer-bottom">
+        <p>© 2026 Night Echo Works. All rights reserved.</p>
+    </div>
+</footer>
+<div class="chat-widget-modern">
+    <a href="https://wa.me/919876543210" target="_blank" class="chat-avatar-modern">
+        <img src="{{ url_for('static', filename='images/bot.gif') }}" alt="bot">
+    </a>
+
+    <a href="https://wa.me/919876543210" target="_blank" class="chat-bubble-modern">
+        <span class="chat-status-dot"></span>
+        <div class="chat-texts">
+            <h4>Hi there 👋</h4>
+            <p>I’m here to help</p>
+        </div>
+    </a>
+</div>
+<div class="section-divider"></div>
+</body>
+</html>

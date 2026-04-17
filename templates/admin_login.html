@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - NightEcho Works</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <section class="admin-login-page">
+        <div class="admin-login-card">
+            <h1>Admin Login</h1>
+            <p>Sign in to manage website enquiries</p>
+
+            {% if error %}
+            <div class="error-box">{{ error }}</div>
+            {% endif %}
+
+            <form method="POST" class="admin-login-form">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Enter username" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="back-btn-container">
+                    <a href="/" class="back-btn">← Back to Home</a>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">Login</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
