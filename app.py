@@ -239,6 +239,14 @@ def sitemap():
 </urlset>
 """, mimetype='application/xml')
 
+@app.route("/robots.txt")
+def robots():
+    return """User-agent: *
+Allow: /
+
+Sitemap: https://night-echo-works.onrender.com/sitemap.xml
+"""
+
 
 # ---------------- LOGOUT ----------------
 @app.route("/logout")
