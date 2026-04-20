@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://night-echo-works.onrender.com/sitemap.xml
