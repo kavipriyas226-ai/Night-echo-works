@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, Response
 import mysql.connector
 import os
 from dotenv import load_dotenv
@@ -213,6 +213,32 @@ def delete_enquiry(enquiry_id):
         print("Error:", e)
 
     return redirect(url_for("dashboard"))
+
+
+@app.route("/sitemap.xml")
+def sitemap():
+    sitemap_xml = """<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+  <loc>https://night-echo-works.onrender.com/</loc>
+</url>
+
+<url>
+  <loc>https://night-echo-works.onrender.com/services</loc>
+</url>
+
+<url>
+  <loc>https://night-echo-works.onrender.com/about</loc>
+</url>
+
+<url>
+  <loc>https://night-echo-works.onrender.com/contact</loc>
+</url>
+
+</urlset>
+"""
+    return Response(sitemap_xml, mimetype='application/xml')
 
 
 # ---------------- LOGOUT ----------------
